@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1280px" height="1342px" viewBox="0 0 1280 1342" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.1.1 (8761) - http://www.bohemiancoding.com/sketch -->
+    <title>laravelday</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="laravelday" sketch:type="MSLayerGroup" transform="translate(0.000000, 1.000000)">
+            <g id="laravel-logo" sketch:type="MSShapeGroup">
+                <path d="M1275,409.4 C1266.6,399.8 1149.4,253.2 1128.8,228.4 C1108.2,203.6 1098,208.4 1085.4,209.8 C1072.8,211.2 925.4,236.6 907.2,239.4 C889,242.2 879.2,249.2 889.8,264 L1018.2,445.8 L630.6,538.2 L322.4,23.6 C310.2,5.4 307.6,-1.8 280,0.2 C252.4,2.2 38.2,20.2 23,20.2 C7.8,20.2 -9,28.2 6.2,64.2 C21.4,100.2 264,623.8 270.8,638.2 C281.048899,664.206533 310.024272,677.457466 336.4,668.2 C378.6,658 525,619.8 605,598.8 C647.2,675.4 733.4,830.6 749.4,852.8 C770.6,882.6 785.4,877.6 818,867.6 C843.6,859.8 1218,725.4 1234,718.6 C1250,711.8 1261.2,706.8 1249.8,689.8 C1241.6,678.2 1143,546.4 1091.4,478.2 L1266,431.6 C1281.4,426.6 1283.6,418.2 1275,409.4 L1275,409.4 Z M570.6,553.4 L337.4,609 C325.8,611.6 325.8,610.4 324.4,606.4 C323,602.4 66.4,73 62.8,66.4 C59.2,59.8 59.4,54.6 62.8,54.6 C66.2,54.6 267.8,36.6 274.8,36.2 C281.8,35.8 281.2,37.4 283.8,41.8 L573,541.8 C578.2,549.8 580,551 570.6,553.4 L570.6,553.4 Z M1182.6,668 C1186,673.4 1189.6,677 1178.6,680.8 C1167.6,684.6 811.2,805.2 804.4,808.2 C797.6,811.2 792,812.2 783.2,799.2 C774.4,786.2 658.4,585.6 658.4,585.6 L1036,487.4 C1047,483.8 1049.6,485.2 1054.4,491.8 C1059.2,498.4 1180,662.8 1182.6,668.2 L1182.6,668 Z M1206.8,399.8 C1198.4,401.8 1060,436.2 1060,436.2 L946.6,280.6 C943.4,276 940.8,271.6 948.8,270.6 C956.8,269.6 1085.6,246.2 1091.4,245 C1098.25383,242.131084 1106.15505,245.115989 1109.4,251.8 C1116.6,261.6 1214.6,385.8 1218.4,390.6 C1222.2,395.4 1215.2,398.2 1206.8,400 L1206.8,399.8 Z" id="Shape" fill="#F0543F"></path>
+                <path d="M577.6,549 C577.6,551.2 576.4,552 570.8,553.4 L540,561 L567.8,609.8 L605.8,599.8" id="Shape" opacity="0.4" fill="#2B2626"></path>
+                <g id="Group" transform="translate(1040.000000, 480.000000)" fill="#2B2626">
+                    <path d="M9,6.4 C11.238596,7.78743267 13.0948609,9.71244812 14.4,12 L32.8,38.2 L72.8,26.2 L51.4,-1.8" id="Shape"></path>
+                </g>
+            </g>
+            <rect id="Rectangle-1" stroke="#979797" fill="#417505" sketch:type="MSShapeGroup" x="0" y="1001" width="426" height="80"></rect>
+            <text id="LaravelDay" sketch:type="MSTextLayer" font-family="Miriam Libre" font-size="200" font-weight="bold" sketch:alignment="middle" fill="#F0543F">
+                <tspan x="98" y="1302">LaravelDay</tspan>
+            </text>
+            <rect id="Rectangle-2" fill="#FFFFFF" sketch:type="MSShapeGroup" x="427" y="1001" width="426" height="80"></rect>
+            <rect id="Rectangle-3" stroke="#979797" fill="#D0011B" sketch:type="MSShapeGroup" x="854" y="1001" width="426" height="80"></rect>
+        </g>
+    </g>
+</svg>

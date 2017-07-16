@@ -1,0 +1,80 @@
+@include block ('sponsorship') {
+  @include element ('title') {
+    @include title-uppercase;
+    color: $color-text-info;
+    font-size: 50px;
+    line-height: 110px;
+    margin-bottom: s(2);
+
+    @include media ('>=mobile-large') {
+      font-size: 90px;
+      text-align: left;
+    }
+
+    @include media ('>=tablet-small') {
+      font-size: 150px;
+    }
+
+    @include media ('>=tablet-large') {
+      font-size: 200px;
+    }
+  }
+
+  @include element ('title-small') {
+    font-size: 20%;
+    line-height: 50px;
+
+    @include media ('<=mobile-large') {
+      font-size: 20px;
+      line-height: 20px;
+      margin-bottom: -30px;
+    }
+
+    @include media ('>mobile-large') {
+      line-height: 60px;
+    }
+
+    @include media ('>tablet-small') {
+      line-height: 110px;
+    }
+  }
+
+  @include element ('you-can') {
+    @include where-when;
+    font-size: 32px;
+    margin-bottom: s(5);
+    margin-top: s(-5);
+
+    @include media ('<mobile-large') {
+      margin-bottom: s(1);
+      margin-top: s(-3);
+    }
+  }
+
+  @include element ('row') {
+    margin-left: s(-2);
+    margin-right: s(-2);
+
+    @include float-row((
+        '<=mobile-large': 1,
+        '>mobile-large': 2
+    )) {
+      padding: s(2);
+    }
+  }
+
+  @include element ('text-title') {
+    @include where-when;
+    font-size: 32px;
+    margin-bottom: s(1);
+  }
+
+  @include element ('text') {
+    font-size: 14px;
+    line-height: 32px;
+
+    & + & {
+      margin-top: s(3);
+    }
+  }
+}

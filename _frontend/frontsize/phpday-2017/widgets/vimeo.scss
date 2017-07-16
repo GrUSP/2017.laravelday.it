@@ -1,0 +1,39 @@
+@include block ('vimeo') {
+  margin-top: s(4);
+  position: static;
+  width: 640px;
+
+  &:hover {
+    position: relative;
+    z-index: 1;
+  }
+
+  @include media ('<mobile-large') {
+    margin-left: s(-4);
+    margin-right: s(-4);
+    width: auto;
+  }
+
+  @include media ('>=mobile-large') {
+    margin-left: s(-4);
+    width: 100vw;
+  }
+
+  @include media ('>=tablet-small') {
+    margin-left: 0;
+    width: auto;
+  }
+
+  @include element ('video') {
+    width: 640px;
+
+    @include media ('<tablet-small') {
+      height: 100vh;
+      width: 100%;
+    }
+
+    @include media ('<mobile-large') {
+      height: 56vw;
+    }
+  }
+}

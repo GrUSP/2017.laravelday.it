@@ -1,0 +1,42 @@
+@mixin -social-color($social, $color) {
+  &.icon-#{$social}:hover {
+    background-color: $color;
+  }
+}
+
+@include block ('social') {
+  $size: 48px;
+
+  background-color: $color-background-info;
+  border-radius: $size;
+  color: $color-text-action;
+  display: inline-block;
+  font-size: 18px;
+  height: $size;
+  line-height: $size;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.25s ease-out;
+  width: $size;
+
+  & + & {
+    margin-left: s(1);
+  }
+
+  @include modifier ('footer') {
+    color: $color-text;
+    margin-bottom: s(1);
+    margin-right: s(1);
+
+    & + & {
+      margin-left: 0;
+    }
+  }
+
+  @include -social-color('facebook', $color-facebook);
+  @include -social-color('twitter', $color-twitter);
+  @include -social-color('gplus', $color-gplus);
+  @include -social-color('flickr', $color-flickr);
+  @include -social-color('vimeo', $color-vimeo);
+  @include -social-color('youtube', $color-youtube);
+}

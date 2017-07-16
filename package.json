@@ -1,0 +1,30 @@
+{
+  "name": "cssday",
+  "version": "0.0.1",
+  "description": "Conference site",
+  "main": "index.js",
+  "devDependencies": {
+    "dustman": "^1.11.55",
+    "frontsize": "git+https://github.com/ideatosrl/frontsize.git#372f2a6",
+    "gulp": "github:gulpjs/gulp#4.0"
+  },
+  "scripts": {
+    "build": "./node_modules/.bin/gulp -S --config dustman-cssday.yml",
+    "dev": "./node_modules/.bin/gulp -S --config dustman-cssday.yml watch & jekyll serve",
+    "setup": "cp ./node_modules/dustman/gulpfile.js ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GrUSP/2017.cssday.it.git"
+  },
+  "author": "Vittorio <me@vittoriovittori.com> (http://vit.to/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GrUSP/2017.cssday.it/issues"
+  },
+  "homepage": "https://github.com/GrUSP/2017.cssday.it#readme",
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "moment": "^2.17.1"
+  }
+}

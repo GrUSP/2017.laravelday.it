@@ -1,0 +1,62 @@
+@include block ('speaker') {
+
+  padding-bottom: s(2);
+
+  &:hover {
+    @include element ('pic') {
+      filter: grayscale(0);
+    }
+  }
+
+  @include element ('pic') {
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(1);
+    height: 300px;
+    transition: filter 0.25s ease-in-out;
+    width: 100%;
+
+    @include media ('<mobile-large') {
+      height: 220px;
+    }
+  }
+
+  @include element ('full-name') {
+    margin-top: -52px;
+    position: relative;
+  }
+
+  @include element ('name') {
+    background-color: $color-text-speaker-name-alt;
+    clear: both;
+    color: $color-text-speaker-name;
+    float: left;
+    font-family: $font-family-title;
+    font-size: 18px;
+    font-style: italic;
+    padding: s(0.5) s(0.25);
+  }
+
+  @include element ('description') {
+    clear: both;
+    display: block;
+    font-family: $font-family-speaker;
+    font-size: 13px;
+    padding-top: s(1);
+  }
+
+  @include element ('twitter-link') {
+    clear: both;
+    color: $color-twitter-link;
+    font-family: $font-family-speaker;
+    font-size: 11px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: color 0.125s ease-out;
+
+    &:hover {
+      color: $color-text-speaker-name-alt;
+    }
+  }
+}

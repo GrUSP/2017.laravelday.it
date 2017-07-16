@@ -1,0 +1,14 @@
+.vimeo-phrase {
+  font-family: $font-family-title;
+  font-size: 30px;
+  font-style: italic;
+  font-weight: bold;
+  line-height: 45px;
+  margin-left: 200px;
+  margin-top: 200px;
+
+  @include media ('<tablet-large') {
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+}

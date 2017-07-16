@@ -1,0 +1,47 @@
+@include block ('row') {
+
+  margin-left: s(-2);
+  margin-right: s(-2);
+
+  @include modifier ('2') {
+    @include float-row((
+        '<=mobile-large': 1,
+        '>mobile-large': 2
+    ));
+  }
+
+  @include modifier ('3') {
+    @include float-row((
+        '<=tablet-small': 1,
+        '>tablet-small': 3
+    ));
+  }
+
+  @include modifier ('4') {
+    @include float-row((
+        '<=mobile-large': 1,
+        '<tablet-large': 2,
+        '>=tablet-large': 4
+    ));
+  }
+
+  @include element ('column') {
+    @include text;
+    padding: s(2);
+  }
+
+  @include element ('title') {
+    @include title;
+  }
+
+  @include element ('text') {
+    @include text;
+    margin-top: s(2);
+
+    & + {
+      @include element ('title') {
+        margin-top: s(6);
+      }
+    }
+  }
+}

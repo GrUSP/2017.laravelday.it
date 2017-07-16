@@ -1,0 +1,16 @@
+<tr>
+  <th class="schedule__head schedule__head--lower schedule__time schedule__time--show-when-needed">
+    Time
+  </th>
+  {% if include.tracks %}
+    {% for i in (1..include.tracks) %}
+    <th class="schedule__head schedule__head--upper">
+      Track{{i}}
+    </th>
+    {% endfor %}
+  {% else %}
+  <th class="schedule__head schedule__head--upper">
+    Track{{include.track}}
+  </th>
+  {% endif %}
+</tr>

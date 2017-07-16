@@ -1,0 +1,92 @@
+@include block ('sponsor-intro') {
+  margin-top: s(8);
+
+  @include element ('title') {
+    @include title-uppercase;
+    color: $color-text-info;
+    font-size: 60px;
+    line-height: 50px;
+    margin-bottom: -25px;
+    margin-top: s(10);
+    text-align: center;
+
+    @include media ('>=mobile-large') {
+      font-size: 90px;
+      line-height: 110px;
+      margin-top: 0;
+    }
+
+    @include media ('>=tablet-small') {
+      font-size: 150px;
+      line-height: 110px;
+      margin-top: s(12);
+    }
+
+    @include media ('>=tablet-large') {
+      font-size: 200px;
+      line-height: 50px;
+      margin-top: s(15);
+    }
+  }
+
+  @include element ('question') {
+    @include where-when;
+    font-size: 18px;
+    margin-bottom: 0;
+    margin-top: s(1);
+    text-align: center;
+
+    @include media ('>=mobile-large') {
+      font-size: 20px;
+      margin-bottom: s(2);
+      margin-top: s(-1);
+      text-align: left;
+    }
+
+    @include media ('>=tablet-small') {
+      font-size: 24px;
+      margin-bottom: s(4);
+      margin-top: 0;
+    }
+  }
+
+  @include element ('question-red') {
+    @include where-when;
+    color: $color-text-question;
+    display: block;
+    font-size: 18px;
+    margin-top: s(3);
+    text-align: center;
+
+    @include media ('>=mobile-large') {
+      font-size: 20px;
+      text-align: left;
+    }
+
+    @include media ('>=tablet-small') {
+      font-size: 24px;
+    }
+  }
+
+  @include element ('row') {
+    margin-left: s(-2);
+    margin-right: s(-2);
+    width: auto;
+
+    @include float-row((
+        '<=mobile-large': 1,
+        '>mobile-large': 2
+    )) {
+      padding: s(2);
+    }
+  }
+
+  @include element ('text') {
+    font-size: 14px;
+    line-height: 32px;
+
+    & + & {
+      margin-top: s(3);
+    }
+  }
+}

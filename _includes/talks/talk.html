@@ -1,0 +1,84 @@
+{% assign speaker_id = include.talk.speaker_id %}
+<article id="{{speaker_id}}" class="talk">      
+  <div class="talk__left">
+    {% if include.talk.image %}
+      <div class="talk__speaker" style="background-image:url('{{ site.baseurl }}/img/{{ site.data.conference.slug }}/speaker/{{ include.talk.image }}');"></div>
+    {% else %}
+      {% if speaker_id.first %}
+          {% for speaker in site.data.speakers.list %}
+            {% if speaker.id == speaker_id.first %}
+              <div class="talk__speaker" style="background-image:url('{{ site.baseurl }}/img/{{ site.data.conference.slug }}/speaker/{{ speaker.image }}');"></div>
+              {% break %}
+            {% endif %}
+          {% endfor %}
+      {% else %}
+        {% for speaker in site.data.speakers.list %}
+          {% if speaker.id == speaker_id %}
+              <div class="talk__speaker" style="background-image:url('{{ site.baseurl }}/img/{{ site.data.conference.slug }}/speaker/{{ speaker.image }}');"></div>
+            {% break %}
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+    {% endif %}
+  </div>
+  <div class="talk__right">
+    <div class="talk__speakers">
+      {% if speaker_id.first %}
+        {% for current_speaker_id in speaker_id %}
+          {% for speaker in site.data.speakers.list %}
+            {% if speaker.id == current_speaker_id %}
+              <span class="talk__speaker-name" id="{{ 'Nome speaker' | replace: ' ', '-' }}">
+                {{ speaker.first_name }} {{ speaker.last_name }}
+              </span>
+            {% endif %}
+          {% endfor %}
+        {% endfor %}
+      {% else %}
+        {% for speaker in site.data.speakers.list %}
+          {% if speaker.id == speaker_id %}
+            <span class="talk__speaker-name">
+              {{ speaker.first_name }} {{ speaker.last_name }}
+            </span>
+            {% break %}
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+
+      {% if include.talk.keynote %}
+        <div class="talk__keynote">
+          Keynote
+        </div>
+      {% endif %}
+    </div>
+    <h3 class="talk__title">
+      {{ include.talk.title }}
+    </h3>
+    <p class="talk__text">
+      {{ include.talk.extract }}
+    </p>
+    <div class="talk__twitters">
+      {% if speaker_id.first %}
+        {% for current_speaker_id in speaker_id %}
+          {% for speaker in site.data.speakers.list %}
+            {% if speaker.id == current_speaker_id %}
+              <a href="https://twitter.com/{{ speaker.twitter }}" class="talk__speaker-twitter">
+                <i class="icon-twitter"></i>
+                @{{ speaker.twitter }}
+              </a>
+            {% endif %}
+          {% endfor %}
+        {% endfor %}
+      {% else %}
+        {% for speaker in site.data.speakers.list %}
+        {% if speaker.id == speaker_id %}
+          <a href="https://twitter.com/{{ speaker.twitter }}" class="talk__speaker-twitter">
+            <i class="icon-twitter"></i>
+            @{{ speaker.twitter }}
+          </a>
+          {% break %}
+        {% endif %}
+        {% endfor %}
+      {% endif %}
+    </div>
+  </div>
+</article>

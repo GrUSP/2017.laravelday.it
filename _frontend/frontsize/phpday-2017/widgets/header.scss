@@ -1,0 +1,50 @@
+@include block ('header') {
+  background-color: $color-background;
+  box-shadow: $box-shadow-outline;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 2;
+
+  @include element ('row') {
+    display: table;
+  }
+
+  @include element ('logo') {
+    display: table-cell;
+    padding-right: s(2);
+    vertical-align: middle;
+  }
+
+  @include element ('logo-image') {
+    @include logo-image;
+  }
+
+  @include element ('conf-name') {
+    @include conf-name;
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  @include element ('menu') {
+    display: table-cell;
+    text-align: right;
+    width: 100%;
+  }
+
+  @include element ('menu-desktop') {
+    float: right;
+    @include media ('<=tablet-small') {
+      display: none;
+    }
+  }
+
+  @include element ('menu-mobile') {
+    display: block;
+    float: right;
+    @include media ('>tablet-small') {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,94 @@
+@include block ('footer') {
+
+  $font-size-past-editions: 14px;
+
+  background-color: $color-background-dark;
+  clear: both;
+  color: $color-text-footer;
+  overflow: hidden;
+  position: relative;
+
+  @include media ('>=tablet-large') {
+    padding-bottom: 115px;
+  }
+
+  @include element ('where-when') {
+    @include where-when;
+    color: $color-text-footer;
+    font-size: 24px;
+    margin-top: s(6);
+  }
+
+  @include element ('row') {
+    @include float-row((
+        '<=mobile-large': 1,
+        '>=tablet-large': 2
+    )) {
+      position: relative;
+    };
+  }
+
+  @include element ('grusp-logo') {
+    display: block;
+    margin-bottom: s(4);
+    margin-top: s(4);
+  }
+
+  @include element ('grusp-footer') {
+    background-color: $color-background-grusp;
+    color: $color-text-footer;
+    font-size: $font-size-past-editions;
+    line-height: 24px;
+    margin-bottom: s(-2);
+    margin-left: s(-4);
+    margin-right: s(-4);
+    padding: s(4);
+
+    @include media ('>=tablet-large') {
+      left: 0;
+      margin: 0;
+      position: absolute;
+      right: -50%;
+      top: 100%;
+    }
+
+    a {
+      color: $color-menu-button-alt;
+      text-decoration: none;
+      transition: color 0.25s ease-in-out;
+
+      &:hover {
+        color: $color-text-info;
+      }
+    }
+  }
+
+  @include element ('past-editions') {
+    font-size: $font-size-past-editions;
+  }
+
+  @include element ('past-editions-items') {
+    display: inline-block;
+    font-size: $font-size-past-editions;
+    margin-top: s(2);
+  }
+
+  @include element ('nav') {
+    margin-top: s(6);
+  }
+
+  @include element ('past-edition') {
+    color: $color-menu-button-alt;
+    font-weight: 700;
+    text-decoration: none;
+    transition: color 0.25s ease-in-out;
+
+    &:hover {
+      color: $color-menu-button;
+    }
+  }
+
+  @include element ('socials') {
+    margin-top: s(4);
+  }
+}

@@ -1,0 +1,43 @@
+@import '../_config/import';
+@import 'config';
+@import 'vars';
+
+@import 'alias/grid';
+@import 'base/body';
+
+@import 'widgets/button';
+@import 'widgets/conf-city-title';
+@import 'widgets/conf-city';
+@import 'widgets/conf-infos';
+@import 'widgets/follow-us';
+@import 'widgets/footer';
+@import 'widgets/header';
+@import 'widgets/hr';
+@import 'widgets/intro';
+@import 'widgets/limit';
+@import 'widgets/mega-info';
+@import 'widgets/menu';
+@import 'widgets/newsletter';
+@import 'widgets/row';
+@import 'widgets/schedule/schedule-intro';
+@import 'widgets/schedule/schedule';
+@import 'widgets/social';
+
+@import 'widgets/speaker/speaker';
+@import 'widgets/speaker/speakers-title';
+@import 'widgets/speaker/speakers';
+
+@import 'widgets/sponsor/report';
+@import 'widgets/sponsor/sponsor-intro';
+@import 'widgets/sponsor/sponsor-option';
+@import 'widgets/sponsor/sponsor-options';
+@import 'widgets/sponsor/sponsors';
+@import 'widgets/sponsor/sponsorship';
+
+@import 'widgets/talks/talk';
+@import 'widgets/talks/talks-intro';
+@import 'widgets/talks/talks-speakers';
+
+@import 'widgets/venue';
+@import 'widgets/vimeo-phrase';
+@import 'widgets/vimeo';

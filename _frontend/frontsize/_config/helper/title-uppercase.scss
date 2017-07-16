@@ -1,0 +1,6 @@
+@mixin title-uppercase {
+  font-family: $font-family-header;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+}

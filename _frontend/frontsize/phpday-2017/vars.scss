@@ -1,0 +1,58 @@
+
+$color-background-action: $color-carnation;
+$color-background-dark: $color-mine-shaft;
+$color-background-info: $color-jordy-blue;
+$color-background: $color-white;
+$color-background-grusp: $color-black;
+
+$color-text-talk-speakers-title: $color-white;
+$color-background-talk-speakers: $color-black;
+
+$color-background-schedule-current: mix($color-jordy-blue, $color-white, 25%);
+$color-background-schedule-on-air: $color-carnation;
+$color-text-schedule-on-air: $color-white;
+
+$color-background-sponsor: $color-wild-sand;
+$color-background-sponsor-alt: $color-link-water;
+$color-background-sponsor-hover: rgba($color-mine-shaft, 0.05);
+
+$color-menu-button-alt: $color-carnation;
+$color-menu-button: $color-white;
+$color-menu-left: rgba($color-jordy-blue, 0.975);
+$color-menu-right: rgba($color-mine-shaft, 0.975);
+
+$color-button-sold-out: $color-mine-shaft;
+
+$color-text-action: $color-white;
+$color-text-footer: $color-white;
+$color-text-form: $color-white;
+$color-text-info: $color-jordy-blue;
+$color-text-newletter-tip: mix($color-white, $color-mine-shaft);
+$color-text-question: $color-carnation;
+$color-text-schedule-header: $color-white;
+$color-text-schedule-speaker: $color-carnation;
+$color-text-speaker-name-alt: $color-jordy-blue;
+$color-text-speaker-name: $color-white;
+$color-text-sponsorship-option-infos: $color-jordy-blue;
+$color-text-sponsorship-option-plus: $color-atlantis;
+$color-text-sponsorship-option-text: $color-white;
+$color-text-sponsorship-option-title: $color-carnation;
+
+$color-text-talk-title: $color-white;
+$color-background-talk-title: $color-jordy-blue;
+
+$color-text-submit: $color-carnation;
+$color-text: $color-mine-shaft;
+
+$color-twitter-link: $color-carnation;
+$color-text-venue: $color-carnation;
+
+$font-family-header: $font-family-sans;
+$font-family-speaker: $font-family-sans;
+$font-family-text: $font-family-sans;
+$font-family-title: $font-family-serif;
+
+$color-background-talk-highlight: transparent;
+
+$box-shadow-outline: 0 0 0 1px rgba(0, 0, 0, 0.05);
+$color-hr: $color-carnation;

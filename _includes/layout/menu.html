@@ -1,0 +1,87 @@
+<div id="menu" class="menu">
+
+  <div class="menu__left">
+    <div class="menu__conf">
+      <div class="menu__conf-name">
+        {{ site.data.conference.name }} {{ site.data.conference.year }}
+      </div>
+      <div class="menu__conf-logo">
+        <img class="menu__conf-logo-image" src="{{ site.baseurl }}/img/themes/{{ site.data.conference.slug }}/logo.svg">
+      </div>
+    </div>
+    <div class="menu__footer">
+      <a href="{{ site.data.venue.map }}" target="_blank" class="menu__where-when">
+        {{ site.data.conference.where_when }}
+      </a>
+      {% if site.data.tickets.sold_out %}
+        <div class="menu__register menu__register--sold-out">
+          sold out
+        </div>
+      {% else %}
+        <a href="{{ site.data.tickets.url }}" target="_blank" class="menu__register">
+          Registrati<br>
+          adesso
+        </a>
+      {% endif %}
+    </div>
+  </div>
+
+  <div class="menu__right">
+    <div class="menu__cancel">
+      <i id="menu-cancel" class="icon-cancel"></i>
+    </div>
+
+    <nav>
+      <ul class="menu__list">
+        {% if site.data.conference.schedule_available %}
+        <li class="menu__item">
+          <a href="{{ site.baseurl }}/schedule.html" class="menu__button">
+            Programma
+          </a>
+        </li>
+        {% endif %}
+        <li class="menu__item">
+          {% if site.data.tickets.sold_out %}
+            <span class="menu__button menu__button--sold-out">
+              Biglietti
+            </span>
+          {% else %}
+            <a href="{{ site.data.tickets.url }}" target="_blank" class="menu__button">
+              Biglietti
+            </a>
+          {% endif %}
+        </li>
+        {% if site.data.speakers.call_for_paper %}
+        <li class="menu__item">
+          <a href="{{ site.data.speakers.call_for_paper_url }}" class="menu__button">
+            Call for paper
+          </a>
+        </li>
+        {% endif %}
+        <li class="menu__item">
+          <a href="{{ site.baseurl }}/sponsor.html" class="menu__button">
+            Sponsor
+          </a>
+        </li>
+        {% if site.data.conference.talks_available %}
+        <li class="menu__item">
+          <a href="{{ site.baseurl }}/talks.html" class="menu__button">
+            Talks
+          </a>
+        </li>
+        {% endif %}
+        <li class="menu__item">
+          <a href="{{ site.baseurl }}/venue.html" class="menu__button">
+            Dove
+          </a>
+        </li>
+        <li class="menu__item">
+          <a href="{{ site.baseurl }}/#newsletter" class="menu__button">
+            Newsletter
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+</div>

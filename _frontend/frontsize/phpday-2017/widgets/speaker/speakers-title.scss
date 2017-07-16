@@ -1,0 +1,12 @@
+@include block ('speakers-title') {
+  margin-bottom: s(-12);
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  top: s(-12);
+
+  @include media ('<desktop-small') {
+    margin-bottom: 0;
+    top: 0;
+  }
+}

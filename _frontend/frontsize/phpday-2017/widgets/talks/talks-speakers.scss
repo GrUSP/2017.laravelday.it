@@ -1,0 +1,43 @@
+@include block ('talks-speakers') {
+  background-color: $color-background;
+  position: fixed;
+  top: 100px;
+
+  @include media ('<=tablet-large') {
+    display: none;
+  }
+
+  @include element ('title') {
+    @include title-uppercase;
+    background-color: $color-background-talk-speakers;
+    color: $color-text-talk-speakers-title;
+    left: -20px;
+    padding: s(3) s(2) s(1);
+    position: absolute;
+    top: 80px;
+    transform: rotate(-90deg);
+    transform-origin: 30% 70%;
+    width: 200px;
+  }
+
+  @include element ('items') {
+    list-style-type: none;
+    margin: 0;
+    margin-top: s(2);
+    padding-left: 80px;
+    padding-right: s(2);
+  }
+
+  @include element ('item') {
+    & + & {
+      margin-top: s(2);
+    }
+  }
+
+  @include element ('link') {
+    @include title;
+    color: $color-text-schedule-speaker;
+    font-size: 12px;
+    text-decoration: none;
+  }
+}

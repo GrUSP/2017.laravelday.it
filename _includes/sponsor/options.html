@@ -1,0 +1,160 @@
+<div class="limit">
+  <div class="sponsor-options">
+    {% if site.data.sponsors.main %}
+    <div class="sponsor-options__column">
+      <div class="sponsor-option">
+        <div class="sponsor-option__title">
+          main
+        </div>
+        <div class="sponsor-option__price">
+          {{ site.data.sponsors.main.price }}
+        </div>
+        <div class="sponsor-option__vat">
+          (+ IVA 22%)
+        </div>
+        <div class="sponsor-option__slots-remaining">
+          {{ site.data.sponsors.main.max - site.data.sponsors.main.list.size }} slot disponibile
+        </div>
+        <ul class="sponsor-option__list">
+          {% for offer in site.data.sponsors.main.offer %}
+          <li class="sponsor-option__list-item">
+            {{ offer }}
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+    {% endif %}
+
+    {% if site.data.sponsors.diamond %}
+    <div class="sponsor-options__column">
+      <div class="sponsor-option">
+        <div class="sponsor-option__title">
+          diamond
+        </div>
+        <div class="sponsor-option__price">
+          {{ site.data.sponsors.diamond.price }}
+        </div>
+        <div class="sponsor-option__vat">
+          (+ IVA 22%)
+        </div>
+        <div class="sponsor-option__slots-remaining">
+          {{ site.data.sponsors.diamond.max - site.data.sponsors.diamond.list.size }} slots available
+        </div>
+        <ul class="sponsor-option__list">
+          {% for offer in site.data.sponsors.diamond.offer %}
+          <li class="sponsor-option__list-item">
+            {{ offer }}
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+    {% endif %}
+
+    {% if site.data.sponsors.platinum %}
+    <div class="sponsor-options__column">
+      <div class="sponsor-option">
+        <div class="sponsor-option__title">
+          platinum
+        </div>
+        <div class="sponsor-option__price">
+          {{ site.data.sponsors.platinum.price }}
+        </div>
+        <div class="sponsor-option__vat">
+          (+ IVA 22%)
+        </div>
+        <div class="sponsor-option__slots-remaining">
+          {{ site.data.sponsors.platinum.max - site.data.sponsors.platinum.list.size }} slot disponibile
+        </div>
+        <ul class="sponsor-option__list">
+          {% for offer in site.data.sponsors.platinum.offer %}
+          <li class="sponsor-option__list-item">
+            {{ offer }}
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+    {% endif %}
+
+    {% if site.data.sponsors.gold %}
+    <div class="sponsor-options__column">
+      <div class="sponsor-option">
+        <div class="sponsor-option__title">
+          gold
+        </div>
+        <div class="sponsor-option__price">
+          {{ site.data.sponsors.gold.price }}
+        </div>
+        <div class="sponsor-option__vat">
+          (+ IVA 22%)
+        </div>
+        <div class="sponsor-option__slots-remaining">
+          {{ site.data.sponsors.gold.max - site.data.sponsors.gold.list.size }} slot disponibili
+        </div>
+        <ul class="sponsor-option__list">
+          {% for offer in site.data.sponsors.gold.offer %}
+          <li class="sponsor-option__list-item">
+            {{ offer }}
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+    {% endif %}
+
+    {% if site.data.sponsors.silver %}
+    <div class="sponsor-options__column">
+      <div class="sponsor-option">
+        <div class="sponsor-option__title">
+          silver
+        </div>
+        <div class="sponsor-option__price">
+          {{ site.data.sponsors.silver.price }}
+        </div>
+        <div class="sponsor-option__vat">
+          (+ IVA 22%)
+        </div>
+        <div class="sponsor-option__slots-remaining">
+          {{ site.data.sponsors.silver.max - site.data.sponsors.silver.list.size }} slot disponibili
+        </div>
+        <ul class="sponsor-option__list">
+          {% for offer in site.data.sponsors.silver.offer %}
+          <li class="sponsor-option__list-item">
+            {{ offer }}
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+    {% endif %}
+
+    {% if site.data.sponsors.bronze %}
+    <div class="sponsor-options__column">
+      <div class="sponsor-option">
+        <div class="sponsor-option__title">
+          bronze
+        </div>
+        <div class="sponsor-option__price">
+          {{ site.data.sponsors.bronze.price }}
+        </div>
+        <div class="sponsor-option__vat">
+          (+ IVA 22%)
+        </div>
+        <div class="sponsor-option__slots-remaining">
+          {{ site.data.sponsors.bronze.max - site.data.sponsors.bronze.list.size }} slot disponibili
+        </div>
+        <ul class="sponsor-option__list">
+          {% for offer in site.data.sponsors.bronze.offer %}
+          <li class="sponsor-option__list-item">
+            {{ offer }}
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+    {% endif %}
+
+  </div>
+</div>

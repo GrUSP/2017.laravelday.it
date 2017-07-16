@@ -1,0 +1,22 @@
+
+markdown: kramdown
+highlighter: rouge
+permalink: /blog/:title
+# baseurl: /repo-name # https://byparker.com/blog/2014/clearing-up-confusion-around-baseurl/
+rdiscount:
+  extensions: [smart]
+defaults:
+  -
+    values:
+      layout: base
+exclude:
+  - .gitignore
+  - dustman.yml
+  - Gemfile
+  - Gemfile.lock
+  - gulpfile.js
+  - LICENSE
+  - node_modules
+  - npm-debug.log
+  - package.json
+  - README.md

@@ -1,0 +1,17 @@
+@include block ('sponsor-options') {
+  margin-left: s(-2);
+  margin-right: s(-2);
+
+  @include media ('<=mobile-large') {
+    margin-left: s(-6);
+    margin-right: s(-6);
+  }
+
+  @include float-row((
+      '<=tablet-small': 1,
+      '>tablet-small', '<=tablet-large': 2,
+      '>tablet-large': 3
+  )) {
+    padding: s(2);
+  }
+}

@@ -1,0 +1,49 @@
+@include block ('venue') {
+  background-color: $color-background;
+  float: right;
+  line-height: 24px;
+  margin-top: -70px;
+  padding: s(2);
+  padding-bottom: s(4);
+  position: relative;
+  width: 50%;
+
+  @include media ('<tablet-small') {
+    float: none;
+    margin-top: 0;
+    position: static;
+    width: 100%;
+  }
+
+  @include element ('map-pin') {
+    color: $color-text-venue;
+    left: -80px;
+    margin-top: -160px;
+    position: relative;
+
+    i {
+      font-size: 200px;
+    }
+
+    @include media ('<tablet-small') {
+      left: -40px;
+      margin-top: -100px;
+
+      i {
+        font-size: 100px;
+      }
+    }
+  }
+
+  @include element ('name') {
+    @include title-uppercase;
+    color: $color-text-venue;
+    font-size: 24px;
+    line-height: 2;
+  }
+
+  @include element ('street') {
+    display: block;
+    font-size: 14px;
+  }
+}

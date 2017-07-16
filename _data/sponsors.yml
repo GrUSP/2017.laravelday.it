@@ -1,0 +1,64 @@
+# place images in:
+# img/sponsors/file.jpg
+# img/sponsors/guide.pdf
+
+pdf:
+call_for_sponsor: true
+
+main:
+  price: € 5,000
+  offer:
+    - Banner sul sito
+    - Possibilità di tenere un talk tecnico (sono escluse le tematiche commerciali).
+      Il talk dovrà essere preapprovato dagli organizzatori.
+    - Pubblicità nelle comunicazioni pre-evento
+    - Autorizzazione a portare pubblicità e gadget (volantini, adesivi, magliette)
+    - Posizionamento del vostro roll-up nella sala
+    - 5 biglietti gratuiti
+    - Banchetto principale 2m x 1m in sala o nella hall
+  max: 1
+  list:
+
+platinum:
+  price: € 3,000
+  offer:
+    - Banner sul sito
+    - Pubblicità nelle comunicazioni pre-evento
+    - Autorizzazione a portare pubblicità e gadget (volantini, adesivi, magliette)
+    - Posizionamento del vostro roll-up nella sala
+    - 4 biglietti gratuiti
+    - Banchetto 1m x 1m in sala o nella hall
+  max: 2
+  list:
+    -
+      url: https://www.ideato.it/?utm_source=symfonyday
+      image: ideato.svg
+gold:
+  price: € 1,000
+  offer:
+    - Banner sul sito
+    - Pubblicità nelle comunicazioni pre-evento
+    - Autorizzazione a portare pubblicità e gadget (volantini, adesivi, magliette)
+    - Posizionamento del vostro roll-up nella sala
+    - 3 biglietti gratuiti
+  max: 8
+  list:
+
+silver:
+  price: € 500
+  offer:
+    - Banner sul sito
+    - Pubblicità nelle comunicazioni pre-evento
+    - Autorizzazione a portare pubblicità e gadget (volantini, adesivi, magliette)
+    - 2 biglietti gratuiti
+  max: 16
+  list:
+
+bronze:
+  price: € 300
+  offer:
+    - Banner sul sito
+    - Autorizzazione a portare pubblicità e gadget (volantini, adesivi, magliette)
+    - 1 biglietto gratuito
+  max: 32
+  list:

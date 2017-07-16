@@ -1,0 +1,14 @@
+<div class="talks-speakers">
+  <div class="talks-speakers__title">
+    Speakers
+  </div>
+  <ul class="talks-speakers__items">
+    {% for speaker in site.data.speakers.list %}
+    <li class="talks-speakers__item">
+      <a class="talks-speakers__link" href="{{ site.baseurl }}#{{ speaker.id}}">
+        {{ speaker.first_name }} {{ speaker.last_name }}
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</div>

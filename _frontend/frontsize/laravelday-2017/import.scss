@@ -1,0 +1,46 @@
+@import '../_config/import';
+@import '../phpday-2017/config';
+@import 'vars';
+
+@import '../phpday-2017/alias/grid';
+@import '../phpday-2017/base/body';
+
+@import '../phpday-2017/widgets/button';
+@import '../phpday-2017/widgets/conf-city-title';
+@import '../phpday-2017/widgets/conf-city';
+@import '../phpday-2017/widgets/conf-infos';
+@import '../phpday-2017/widgets/follow-us';
+@import '../phpday-2017/widgets/footer';
+@import '../phpday-2017/widgets/header';
+@import '../phpday-2017/widgets/hr';
+@import '../phpday-2017/widgets/intro';
+@import '../phpday-2017/widgets/limit';
+@import '../phpday-2017/widgets/mega-info';
+@import '../phpday-2017/widgets/menu';
+@import '../phpday-2017/widgets/newsletter';
+@import '../phpday-2017/widgets/row';
+@import '../phpday-2017/widgets/schedule/schedule-intro';
+@import '../phpday-2017/widgets/schedule/schedule';
+@import '../phpday-2017/widgets/social';
+
+@import '../phpday-2017/widgets/speaker/speaker';
+@import '../phpday-2017/widgets/speaker/speakers-title';
+@import '../phpday-2017/widgets/speaker/speakers';
+
+@import '../phpday-2017/widgets/sponsor/report';
+@import '../phpday-2017/widgets/sponsor/sponsor-intro';
+@import '../phpday-2017/widgets/sponsor/sponsor-option';
+@import '../phpday-2017/widgets/sponsor/sponsor-options';
+@import '../phpday-2017/widgets/sponsor/sponsors';
+@import '../phpday-2017/widgets/sponsor/sponsorship';
+
+@import '../phpday-2017/widgets/talks/talk';
+@import '../phpday-2017/widgets/talks/talks-intro';
+@import '../phpday-2017/widgets/talks/talks-speakers';
+
+@import '../phpday-2017/widgets/venue';
+@import '../phpday-2017/widgets/vimeo-phrase';
+@import '../phpday-2017/widgets/vimeo';
+
+@import 'widgets/mega-info';
+@import 'widgets/header';

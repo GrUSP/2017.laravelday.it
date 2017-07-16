@@ -1,0 +1,57 @@
+@mixin input-newsletter ($type, $selector-checked, $selector-not-checked, $margin-left: false) {
+  $transition: color 0.25s ease-in-out;
+
+  @include element ($type) {
+    display: inline;
+
+    @if ($margin-left != false) {
+      margin-left: $margin-left;
+    }
+
+    span {
+      cursor: pointer;
+      margin-left: -4px;
+      margin-right: 4px;
+      transition: $transition;
+
+      &:hover {
+        color: $color-text-info;
+      }
+    }
+  }
+
+  @include element ('input-#{$type}') {
+    display: none;
+    @include title-uppercase;
+
+    & + .#{$selector-not-checked} {
+      display: inline-block;
+    }
+
+    & + .#{$selector-not-checked} + .#{$selector-checked} {
+      display: none;
+    }
+
+    &:checked {
+      & + .#{$selector-not-checked} {
+        display: none;
+      }
+
+      & + .#{$selector-not-checked} + .#{$selector-checked} {
+        color: $color-text-info;
+        display: inline-block;
+
+        & + span {
+          color: $color-text-info;
+        }
+      }
+    }
+  }
+
+  .#{$selector-not-checked},
+  .#{$selector-checked} {
+    color: $color-text-info;
+    cursor: pointer;
+    transition: $transition;
+  }
+}

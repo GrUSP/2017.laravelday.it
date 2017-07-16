@@ -1,0 +1,39 @@
+@mixin -chessboard-add-even-columns ($cols, $rows, $background-color) {
+  @for $r from 1 through $rows {
+    @for $c from 1 through $cols {
+      $i: ($r * $cols) - $cols + $c;
+      @if ($r / 2 != round($r / 2)) {
+        @if ($c / 2 == round($c / 2)) {
+          &:nth-child(#{$i}) {
+            background-color: $background-color;
+          }
+        }
+      } @else {
+        @if ($c / 2 != round($c / 2)) {
+          &:nth-child(#{$i}) {
+            background-color: $background-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin -chessboard-add-odd-columns ($items, $background-color) {
+  @for $i from 1 through $items {
+    @if ($i / 2 != round($i / 2)) {
+      &:nth-child(#{$i}) {
+        background-color: $background-color;
+      }
+    }
+  }
+}
+
+@mixin chessboard ($cols, $rows, $background-color) {
+  @if ($cols / 2 != round($cols / 2)) {
+    $items: $rows * $cols;
+    @include -chessboard-add-odd-columns($items, $background-color);
+  } @else {
+    @include -chessboard-add-even-columns($cols, $rows, $background-color);
+  }
+}

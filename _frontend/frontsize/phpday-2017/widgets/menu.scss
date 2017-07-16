@@ -1,0 +1,192 @@
+@mixin -menu-column {
+  float: left;
+  height: 100vh;
+  padding: s(3);
+  width: 50%;
+}
+
+@include block ('menu') {
+
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transform: translate(0, -125%);
+  transition: 0.5s ease('in-out-quart');
+  z-index: 3;
+
+  @include float-row((
+      '<=mobile-large': 1,
+      '<=tablet-large', '>tablet-large': 2
+  )) {
+    padding: s(2);
+  }
+
+  @include modifier ('active') {
+    transform: translate(0, 0);
+  }
+
+  @include element ('left') {
+    @include -menu-column;
+    background-color: $color-menu-left;
+    position: relative;
+
+    @include media ('<tablet-large') {
+      display: none;
+    }
+  }
+
+  @include element ('right') {
+    @include -menu-column;
+    background-color: $color-menu-right;
+    overflow: auto;
+
+    @include media ('<tablet-large') {
+      width: 100%;
+    }
+  }
+
+  @include element ('conf') {
+    width: 100%;
+  }
+
+  @include element ('conf-name') {
+    @include conf-name;
+    display: table-cell;
+    padding-right: s(2);
+    text-align: right;
+    vertical-align: middle;
+    width: 100%;
+  }
+
+  @include element ('conf-logo') {
+    display: table-cell;
+  }
+
+  @include element ('conf-logo-image') {
+    @include logo-image(1.5);
+  }
+
+  @include element ('cancel') {
+
+    display: block;
+    text-align: right;
+
+    .icon-cancel {
+      color: $color-menu-button;
+      cursor: pointer;
+      display: inline-block;
+      font-size: 72px;
+      transform: scale(1);
+      transition: color 0.125s ease-out, transform 0.075s ease-out;
+
+      &:hover {
+        color: $color-menu-button-alt;
+        transform: scale(1.25);
+      }
+    }
+  }
+
+  @include element ('list') {
+    text-align: right;
+    width: 50%;
+
+    @include media ('<desktop-small') {
+      width: 60%;
+    }
+
+    @include media ('<tablet-large') {
+      text-align: center;
+      width: 100%;
+    }
+  }
+
+  @include element ('item') {
+    display: block;
+    list-style-type: none;
+    padding: s(1) 0;
+  }
+
+  @include element ('button') {
+    color: $color-menu-button-alt;
+    display: inline-block;
+    font-family: $font-family-header;
+    font-size: 40px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 0.25s ease-out;
+
+    &:hover {
+      color: $color-menu-button;
+    }
+
+    @include modifier ('sold-out') {
+      cursor: default;
+      position: relative;
+
+      &:hover {
+        $transparent: rgba($color-menu-button-alt, 0.3);
+        color: $transparent;
+      }
+
+      &::after {
+        background-color: $color-menu-button-alt;
+        border: 2px solid $color-text;
+        content: '';
+        display: block;
+        height: 4px;
+        left: -10%;
+        position: absolute;
+        top: 41%;
+        width: 120%;
+      }
+    }
+  }
+
+  @include element ('footer') {
+    bottom: s(3);
+    left: s(3);
+    position: absolute;
+    right: s(3);
+    text-align: right;
+  }
+
+  @include element ('where-when') {
+    @include where-when;
+    color: inherit;
+    display: block;
+    font-size: 26px;
+    margin-bottom: s(2);
+    text-decoration: none;
+    transition: color 0.25s ease-out;
+
+    &:hover {
+      color: $color-menu-button;
+    }
+  }
+
+  @include element ('register') {
+    color: inherit;
+    font-family: $font-family-header;
+    font-size: 90px;
+    font-weight: 700;
+    margin-bottom: s(6);
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 0.25s ease-out;
+
+    &:hover {
+      color: $color-menu-button;
+    }
+
+    @include modifier ('sold-out') {
+      background-color: $color-menu-button-alt;
+      color: $color-menu-button;
+      display: inline-block;
+      padding: 0 s(2);
+      text-align: center;
+    }
+  }
+}

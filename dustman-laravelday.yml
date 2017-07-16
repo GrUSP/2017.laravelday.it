@@ -1,0 +1,81 @@
+---
+config:
+  autoprefixer:
+    browsers:
+      - "last 3 versions"
+  csslint: csslintrc.json
+  faker:
+    locale: it
+  prettify:
+    indent_char: " "
+    indent_size: 2
+  stylestats: .stylestatsrc
+  twig:
+    cache: false
+  osNotifications: true
+  emptyFolders: true
+  polling: true
+  verbose: 3
+  verify: true
+
+css:
+  file: frontsize.min.css
+  themes:
+    -
+      autoprefixer: true
+      compile: _frontend/frontsize/laravelday-2017/import.scss
+      csslint: false
+      file: symfonyday.css
+      images: _frontend/frontsize/laravelday-2017/img/**/*.*
+      merge: true
+      name: laravelday
+      path: _frontend/temp/
+      stylestats: false
+    -
+      autoprefixer: true
+      compile: _frontend/frontsize/grusp/import.scss
+      csslint: false
+      file: grusp.css
+      fonts: _frontend/frontsize/grusp/fontello/font/**/*.*
+      merge: true
+      name: grusp
+      path: _frontend/temp/
+      stylestats: false
+  vendors:
+    file: vendors.min.css
+    merge: true
+    path: _frontend/temp/
+    files:
+      - _frontend/frontsize/grusp/fontello/css/grusp-codes.css
+  watch: _frontend/frontsize/**/*.scss
+
+js:
+  file: dustman.min.js
+  clean: true
+  files:
+    - _frontend/js/menu.js
+    - _frontend/js/newsletter.js
+    - _frontend/js/schedule.js
+    - _frontend/js/scroll-top.js
+  vendors:
+    file: vendors.min.js
+    files:
+      - node_modules/jquery/dist/jquery.js
+      - node_modules/moment/moment.js
+    merge: true
+    path: _frontend/temp/
+  watch: _frontend/js/**/*.js
+
+shell:
+  after:
+    - jekyll build &
+
+paths:
+  css: css/
+  fonts: fonts/
+  images: img/themes/
+  js: js/
+
+tasks:
+  - css
+  - js

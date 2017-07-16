@@ -1,0 +1,85 @@
+@font-face {
+  font-family: 'grusp';
+  src: url('../font/grusp.eot?13049490');
+  src: url('../font/grusp.eot?13049490#iefix') format('embedded-opentype'),
+       url('../font/grusp.woff2?13049490') format('woff2'),
+       url('../font/grusp.woff?13049490') format('woff'),
+       url('../font/grusp.ttf?13049490') format('truetype'),
+       url('../font/grusp.svg?13049490#grusp') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'grusp';
+    src: url('../font/grusp.svg?13049490#grusp') format('svg');
+  }
+}
+*/
+ 
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "grusp";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+ 
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.icon-minus:before { content: '\e800'; } /* '' */
+.icon-vimeo:before { content: '\e801'; } /* '' */
+.icon-twitter:before { content: '\e802'; } /* '' */
+.icon-gplus:before { content: '\e803'; } /* '' */
+.icon-flickr:before { content: '\e804'; } /* '' */
+.icon-up-dir:before { content: '\e805'; } /* '' */
+.icon-facebook:before { content: '\e806'; } /* '' */
+.icon-play-circled2:before { content: '\e807'; } /* '' */
+.icon-play-1:before { content: '\e808'; } /* '' */
+.icon-location:before { content: '\e809'; } /* '' */
+.icon-right-dir:before { content: '\e80a'; } /* '' */
+.icon-menu-1:before { content: '\e80b'; } /* '' */
+.icon-down-dir:before { content: '\e80c'; } /* '' */
+.icon-left-dir:before { content: '\e80d'; } /* '' */
+.icon-right-dir-1:before { content: '\e80e'; } /* '' */
+.icon-up-dir-1:before { content: '\e80f'; } /* '' */
+.icon-location-1:before { content: '\e810'; } /* '' */
+.icon-minus-1:before { content: '\e811'; } /* '' */
+.icon-cancel:before { content: '\e812'; } /* '' */
+.icon-check:before { content: '\e813'; } /* '' */
+.icon-bar:before { content: '\e814'; } /* '' */
+.icon-menu:before { content: '\f008'; } /* '' */
+.icon-check-empty:before { content: '\f096'; } /* '' */
+.icon-coffee:before { content: '\f0f4'; } /* '' */
+.icon-food:before { content: '\f0f5'; } /* '' */
+.icon-circle-empty:before { content: '\f10c'; } /* '' */
+.icon-circle:before { content: '\f111'; } /* '' */
+.icon-youtube:before { content: '\f313'; } /* '' */

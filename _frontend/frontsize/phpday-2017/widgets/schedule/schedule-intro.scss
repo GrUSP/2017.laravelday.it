@@ -1,0 +1,45 @@
+@include block ('schedule-intro') {
+
+  margin-left: s(-4);
+  margin-right: s(-4);
+  overflow: hidden;
+
+  @include element ('title') {
+    @include title-uppercase;
+    color: $color-text-info;
+    font-size: 60px;
+    margin-bottom: -25px;
+    text-align: center;
+
+    @include media ('>mobile-large') {
+      font-size: 147px;
+      margin-bottom: -90px;
+    }
+
+    @include media ('>tablet-small') {
+      font-size: 190px;
+      margin-bottom: -105px;
+    }
+  }
+
+  @include element ('date') {
+    @include where-when;
+    font-size: 28px;
+    margin-bottom: s(1);
+    padding-left: s(4);
+    padding-right: s(4);
+    text-align: right;
+
+    @include media ('>=mobile-large') {
+      font-size: 20px;
+      margin-bottom: s(2);
+      margin-top: s(-1);
+    }
+
+    @include media ('>=tablet-small') {
+      font-size: 96px;
+      margin-bottom: s(4);
+      margin-top: 0;
+    }
+  }
+}

@@ -1,0 +1,97 @@
+@include block ('report') {
+
+  @include element ('title') {
+    @include title-uppercase;
+    color: $color-text-info;
+    font-size: 26px;
+    line-height: 0.75;
+
+    @include media ('>=mobile-large') {
+      font-size: 70px;
+    }
+
+    @include media ('>=tablet-small') {
+      font-size: 100px;
+    }
+
+    @include media ('>=tablet-large') {
+      font-size: 150px;
+    }
+  }
+
+  @include element ('title-sub') {
+    display: block;
+    margin-left: s(8);
+  }
+
+  @include element ('link') {
+    margin-bottom: s(2);
+    text-align: center;
+    top: s(10);
+
+    @include media ('>=tablet-small') {
+      margin-bottom: 0;
+      margin-right: s(-2);
+      position: relative;
+      text-align: right;
+      top: s(6);
+    }
+
+    @include media ('>=tablet-large') {
+      top: s(10);
+    }
+  }
+
+  @include element ('row') {
+    margin-top: s(-6);
+    position: relative;
+    z-index: 1;
+
+    @include float-row((
+        '<=tablet-small': 2,
+        '>tablet-small': 4
+    ));
+
+    @include media ('<=tablet-small') {
+      margin-top: 0;
+    }
+  }
+
+  @include element ('year') {
+    @include where-when;
+    font-size: 30px;
+    margin-bottom: s(1);
+    margin-top: s(2);
+    text-align: center;
+
+    @include media ('>=mobile-large') {
+      font-size: 60px;
+      margin-top: 0;
+    }
+
+    @include media ('>=tablet-small') {
+      font-size: 70px;
+    }
+
+    @include media ('>=tablet-large') {
+      font-size: 78px;
+    }
+  }
+
+  @include element ('detail') {
+    font-size: 15px;
+    margin: auto;
+    max-width: 85px;
+    text-align: right;
+    width: 100%;
+
+    @include media ('<=tablet-small') {
+      font-size: 12px;
+      max-width: 110px;
+    }
+
+    & + & {
+      margin-top: s(1.75);
+    }
+  }
+}

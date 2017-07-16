@@ -1,0 +1,25 @@
+@include block ('follow-us') {
+  clear: both;
+  float: right;
+  line-height: 24px;
+  margin-bottom: s(4);
+  padding: s(2);
+  width: 50%;
+
+  @include media ('<tablet-small') {
+    float: none;
+    width: 100%;
+  }
+
+  @include element ('title') {
+    @include title-uppercase;
+  }
+
+  @include element ('conf') {
+    color: $color-text-info;
+  }
+
+  @include element ('socials') {
+    margin-top: s(2);
+  }
+}

@@ -1,0 +1,16 @@
+<div class="venue">
+  <div class="venue__map-pin">
+    <i class="icon-location"></i>
+  </div>
+  <h5 class="venue__name">
+    {{ site.data.venue.name }}
+  </h5>
+  <p class="venue__street">
+    {{ site.data.venue.where }}
+  </p>
+  {% if site.data.venue.map %}
+  <a href="{{ site.data.venue.map }}" target="_blank" class="button button--left">
+    Raggiungere la conferenza
+  </a>
+  {% endif %}
+</div>

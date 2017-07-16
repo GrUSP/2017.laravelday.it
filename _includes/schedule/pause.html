@@ -1,0 +1,16 @@
+<tr>
+  <td class="schedule__cell schedule__cell--time schedule__cell--break">
+    <span class="schedule__time">
+      {{ include.time }}
+    </span>
+    <span class="schedule__on-air">
+      enjoy!
+    </span>
+  </td>
+  <td class="schedule__cell schedule__cell--break-event schedule__cell--break" {% if include.fill %} colspan="3" {% endif %}>
+    <div class="schedule__title">
+      <i class="icon-{{ include.icon }}"></i>
+      {{ include.title }}
+    </div>
+  </td>
+</tr>

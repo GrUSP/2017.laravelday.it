@@ -1,0 +1,79 @@
+@include block ('sponsor-option') {
+  background-color: $color-background-dark;
+  color: $color-text-sponsorship-option-text;
+  min-height: 555px;
+  padding: s(2);
+  padding-left: s(6);
+  position: relative;
+  text-align: right;
+
+  @include media ('<=mobile-large') {
+    min-height: 0;
+  }
+
+  @include media ('<=tablet-small') {
+    padding-left: s(3);
+  }
+
+  @include media ('>=tablet-large') {
+    padding-left: s(2);
+  }
+
+  @include element ('title') {
+    @include title-uppercase;
+    color: $color-text-sponsorship-option-title;
+    font-size: 24px;
+    left: s(5);
+    line-height: s(4);
+    position: absolute;
+    top: s(18);
+    transform: rotate(-90deg);
+    transform-origin: 0% 100%;
+    width: 200px;
+  }
+
+  @include element ('price') {
+    @include title-uppercase;
+    color: $color-text-sponsorship-option-infos;
+    font-size: 48px;
+    margin-top: s(4);
+  }
+
+  @include element ('vat') {
+    @include title-uppercase;
+    color: $color-text-sponsorship-option-infos;
+    font-size: 14px;
+    line-height: 2;
+  }
+
+  @include element ('slots-remaining') {
+    color: $color-text-sponsorship-option-infos;
+    @include title;
+    font-size: 14px;
+    line-height: 2;
+  }
+
+  @include element ('list') {
+    font-size: 14px;
+    line-height: 2;
+    margin: 0;
+    padding: 0;
+  }
+
+  @include element ('list-item') {
+    font-size: 13px;
+    line-height: 2;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-left: s(2);
+
+    &::before {
+      @include title;
+      color: $color-text-sponsorship-option-plus;
+      content: '+';
+      margin-left: s(-2);
+      position: absolute;
+    }
+  }
+}

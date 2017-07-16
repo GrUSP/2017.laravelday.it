@@ -1,0 +1,201 @@
+@mixin -sponsor-cell ($padding) {
+  background-color: $color-background-sponsor;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: $padding;
+  text-align: center;
+}
+
+@mixin -add-sponsor ($name, $columns, $rows, $padding, $image-height) {
+  @include element ($name) {
+    @include float-row((
+        '<=mobile-large': 1,
+        '>=tablet-small': $columns
+    )) {
+      @include -sponsor-cell($padding);
+      @include element ('image') {
+        height: $image-height - $padding;
+      }
+
+      @include chessboard ($columns, $rows, $color-background-sponsor-alt);
+
+      @include media ('<tablet-small') {
+        &:nth-child(even) {
+          background-color: $color-background-sponsor;
+        }
+
+        &:nth-child(odd) {
+          background-color: $color-background-sponsor-alt;
+        }
+      }
+    }
+
+  }
+}
+
+@include block ('sponsors') {
+
+  $sponsor-scale: 0.75;
+  $sponsor-rows: 10;
+  $font-size-title: 16px;
+  padding-bottom: s(8);
+
+
+  @include element ('thanks') {
+    @include title-uppercase;
+    color: $color-text-info;
+    font-size: 40px;
+    line-height: 1;
+    margin-bottom: s(-18);
+    padding-left: s(2);
+    padding-right: s(2);
+    position: relative;
+    text-align: right;
+    z-index: 1;
+
+    @include media ('<=mobile-large') {
+      margin-bottom: s(-6);
+    }
+
+    @include media ('>mobile-small') {
+      font-size: 75px;
+    }
+
+    @include media ('>mobile-large') {
+      font-size: 100px;
+    }
+
+    @include media ('>tablet-small') {
+      font-size: 150px;
+    }
+
+    @include media ('>tablet-large') {
+      font-size: 200px;
+    }
+
+    @include media ('>desktop-small') {
+      font-size: 250px;
+    }
+  }
+
+  @include element ('became') {
+    @include where-when;
+    font-size: 18px;
+    margin-top: s(4);
+
+    @include media ('>mobile-small') {
+      font-size: 24px;
+    }
+
+    @include media ('>mobile-large') {
+      font-size: 48px;
+    }
+
+    @include media ('>tablet-small') {
+      font-size: 68px;
+    }
+
+    @include media ('>tablet-large') {
+      font-size: 68px;
+    }
+
+
+  }
+
+  @include element ('contents') {
+    background-color: $color-background;
+  }
+
+  @include element ('link') {
+    display: block;
+    line-height: 0;
+    transition: background-color 0.25s ease-in-out;
+
+    &:hover {
+      background-color: $color-background-sponsor-hover;
+    }
+  }
+
+  @include element ('image') {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+
+    @include media ('<=mobile-large') {
+      height: 150px !important;
+    }
+  }
+
+  @include element ('category') {
+    position: relative;
+
+    & + & {
+      margin-top: s(2);
+    }
+  }
+
+  @include element ('title') {
+    @include title-uppercase;
+    font-size: $font-size-title;
+    left: s(-2);
+    line-height: s(2);
+    position: absolute;
+    text-align: right;
+    top: 180px;
+    transform: rotate(-90deg);
+    transform-origin: 0% 100%;
+    width: 200px;
+  }
+
+  @include element ('title-right') {
+    @include title-uppercase;
+    font-size: $font-size-title;
+    margin-bottom: s(3);
+    margin-top: s(8);
+    text-align: right;
+  }
+
+  @include element ('main') {
+    @include float-row((
+        '<=mobile-large': 1,
+        '>=tablet-small': 1
+    )) {
+      @include -sponsor-cell(s(2));
+
+      &:nth-child(even) {
+        background-color: $color-background-sponsor-alt;
+      }
+
+      @include element ('image') {
+        height: s($sponsor-scale, 660px);
+      }
+    }
+  }
+
+  @include element ('diamond') {
+    @include float-row((
+        '<=mobile-large': 1,
+        '>=tablet-small': 1
+    )) {
+      @include -sponsor-cell(s(2));
+      background-color: $color-background-sponsor;
+
+      &:nth-child(odd) {
+        background-color: $color-background-sponsor-alt;
+      }
+
+      @include element ('image') {
+        height: s($sponsor-scale, 660px);
+      }
+    }
+  }
+
+  @include -add-sponsor('platinum', 2, $sponsor-rows, s(2), s($sponsor-scale, 660px));
+  @include -add-sponsor('gold', 2, $sponsor-rows, s(2), s($sponsor-scale, 400px));
+  @include -add-sponsor('silver', 3, $sponsor-rows, s(2), s($sponsor-scale, 330px));
+  @include -add-sponsor('bronze', 4, $sponsor-rows, s(2), s($sponsor-scale, 200px));
+  @include -add-sponsor('partner', 8, $sponsor-rows, s(1), s($sponsor-scale, 110px));
+
+}

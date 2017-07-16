@@ -1,0 +1,142 @@
+<div id="sponsors" class="sponsors">
+
+  {% assign has_sponsors = site.data.sponsors.diamond.list || site.data.sponsors.platinum.list || site.data.sponsors.gold.list || site.data.sponsors.silver.list || site.data.sponsors.bronze.list %}
+  {% if has_sponsors %}
+    <h4 class="sponsors__thanks">
+      Grazie<br>
+      a
+    </h4>
+  {% endif %}
+
+  <div class="sponsors__contents">
+    <div class="limit limit--no-overflow">
+
+      {% if site.data.sponsors.main.list | size %}
+      <div class="sponsors__category">
+        <div class="sponsors__title">
+          main
+        </div>
+        <div class="sponsors__main">
+          {% for sponsor in site.data.sponsors.main.list %}
+            <div class="sponsors__main-column">
+              <a href="{{ sponsor.url }}" class="sponsors__link">
+                <div style="background-image:url('{{ site.baseurl }}/img/sponsors/{{ sponsor.image }}');" class="sponsors__image"></div>
+              </a>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+      {% endif %}
+
+      {% if site.data.sponsors.diamond.list | size  %}
+      <div class="sponsors__category">
+        <div class="sponsors__title">
+          diamond
+        </div>
+        <div class="sponsors__diamond">
+          {% for sponsor in site.data.sponsors.diamond.list  %}
+            <div class="sponsors__diamond-column">
+              <a href="{{ sponsor.url }}" class="sponsors__link">
+                <div style="background-image:url('{{ site.baseurl }}/img/sponsors/{{ sponsor.image }}');" class="sponsors__image"></div>
+              </a>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+      {% endif %}
+
+      {% if site.data.sponsors.platinum.list | size %}
+      <div class="sponsors__category">
+        <div class="sponsors__title">
+          platinum
+        </div>
+        <div class="sponsors__platinum">
+          {% for sponsor in site.data.sponsors.platinum.list %}
+            <div class="sponsors__platinum-column">
+              <a href="{{ sponsor.url }}" class="sponsors__link">
+                <div style="background-image:url('{{ site.baseurl }}/img/sponsors/{{ sponsor.image }}');" class="sponsors__image"></div>
+              </a>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+      {% endif %}
+
+      {% if site.data.sponsors.gold.list | size %}
+      <div class="sponsors__category">
+        <div class="sponsors__title">
+          gold
+        </div>
+        <div class="sponsors__gold">
+          {% for sponsor in site.data.sponsors.gold.list %}
+            <div class="sponsors__gold-column">
+              <a href="{{ sponsor.url }}" class="sponsors__link">
+                <div style="background-image:url('{{ site.baseurl }}/img/sponsors/{{ sponsor.image }}');" class="sponsors__image"></div>
+              </a>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+      {% endif %}
+
+      {% if site.data.sponsors.silver.list | size %}
+      <div class="sponsors__category">
+        <div class="sponsors__title">
+          silver
+        </div>
+        <div class="sponsors__silver">
+          {% for sponsor in site.data.sponsors.silver.list %}
+            <div class="sponsors__silver-column">
+              <a href="{{ sponsor.url }}" class="sponsors__link">
+                <div style="background-image:url('{{ site.baseurl }}/img/sponsors/{{ sponsor.image }}');" class="sponsors__image"></div>
+              </a>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+      {% endif %}
+
+      {% if site.data.sponsors.bronze.list | size %}
+      <div class="sponsors__category">
+        <div class="sponsors__title">
+          bronze
+        </div>
+        <div class="sponsors__bronze">
+          {% for sponsor in site.data.sponsors.bronze.list %}
+            <div class="sponsors__bronze-column">
+              <a href="{{ sponsor.url }}" class="sponsors__link">
+                <div style="background-image:url('{{ site.baseurl }}/img/sponsors/{{ sponsor.image }}');" class="sponsors__image"></div>
+              </a>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+      {% endif %}
+
+      {% if site.data.partners %}
+      <div class="sponsors__category">
+        <div class="sponsors__title-right">
+          Media partners
+        </div>
+        <div class="sponsors__partner" id="media-partners" data-tags="css frontend"></div>
+      </div>
+      {% endif %}
+
+    </div>
+  </div>
+
+  {% if site.data.sponsors.call_for_sponsor %}
+    <div class="limit">
+      <div class="sponsors__became">
+        Diventa Sponsor!
+      </div>
+        ed aiutaci a far crescere la conferenza<br>
+        {% if site.data.sponsors.pdf %}
+            <a href="{{ site.baseurl }}/img/sponsors/{{ site.data.sponsors.pdf }}" target="_blank" class="button button--left">Download PDF</a>
+        {% else if %}
+            <a href="mailto:info@grusp.org?subject=vorrei sponsorizzare {{ site.data.conference.name }}" target="_blank" class="button button--left">Inviaci una email</a>
+        {% endif %}
+    </div>
+  {% endif %}
+
+</div>

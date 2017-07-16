@@ -1,0 +1,114 @@
+@include block ('newsletter') {
+  background-color: $color-background-dark;
+  clear: both;
+  color: $color-text-form;
+  margin-bottom: s(-12);
+  padding: s(2) 0 s(20);
+
+  @include element ('title') {
+    @include title-uppercase;
+  }
+
+  @include element ('text') {
+    @include title-uppercase;
+    user-select: none;
+
+    @include modifier ('margin-bottom') {
+      margin-bottom: s(2);
+    }
+
+    @include modifier ('hidden') {
+      display: none;
+    }
+
+    @include modifier ('tip') {
+      color: $color-text-newletter-tip;
+      opacity: 0;
+      transition: opacity 0.25s ease-in-out;
+    }
+  }
+
+  @include element ('fake-submit') {
+    &:hover + {
+      @include element ('text') {
+        opacity: 1;
+      }
+    }
+  }
+
+  @include element ('email') {
+    @include where-when;
+    background-color: $color-background-dark;
+    border: 0;
+    border-bottom: 2px solid $color-text-form;
+    color: $color-text-form;
+    display: block;
+    font-size: 20px;
+    margin-top: s(6);
+    padding: s(2) 0;
+    text-transform: lowercase;
+    transition: border 0.25s ease-in-out;
+    width: 100%;
+
+    @include media ('>mobile-small') {
+      font-size: 28px;
+    }
+
+    @include media ('>mobile-large') {
+      font-size: 32px;
+    }
+
+    @include media ('>tablet-small') {
+      font-size: 56px;
+    }
+
+    @include media ('>tablet-large') {
+      font-size: 72px;
+    }
+
+    &:focus {
+      border-bottom-color: $color-background-action;
+      outline: 0;
+
+      &::placeholder {
+        color: mix($color-text-form, $color-background-dark, 20%);
+      }
+    }
+
+    &::placeholder {
+      color: $color-text-form;
+      text-transform: capitalize;
+      transition: color 0.25s ease-in-out;
+    }
+
+    @include modifier ('invalid') {
+      &::placeholder {
+        color: $color-background-action;
+        text-transform: none;
+      }
+    }
+  }
+
+  @include element ('language') {
+    @include title-uppercase;
+    margin-top: s(6);
+    user-select: none;
+
+    label {
+      cursor: pointer;
+    }
+  }
+
+  @include element ('link') {
+    @include title-uppercase;
+    color: $color-background-action;
+    transition: color 0.25s ease-in-out;
+
+    &:hover {
+      color: $color-text-info;
+    }
+  }
+
+  @include input-newsletter('radio', 'icon-circle', 'icon-circle-empty');
+  @include input-newsletter('checkbox', 'icon-check', 'icon-check-empty', -5px);
+}

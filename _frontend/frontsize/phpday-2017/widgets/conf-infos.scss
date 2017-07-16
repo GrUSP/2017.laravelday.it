@@ -1,0 +1,52 @@
+@include block ('conf-infos') {
+
+  margin-top: s(5);
+
+  @include media ('<desktop-small') {
+    margin-top: s(15);
+  }
+
+  @include float-row((
+      '<=mobile-large': 1,
+      '>mobile-large': 2
+  )) {
+    padding-right: s(2);
+
+    @include media ('<=mobile-large') {
+      padding-right: 0;
+    }
+  }
+
+  @include element ('title') {
+    font-family: $font-family-title;
+    font-size: 40px;
+    font-style: italic;
+
+    @include media ('<tablet-small') {
+      font-size: 30px;
+    }
+  }
+
+  @include element ('text') {
+    font-size: 16px;
+    line-height: 2;
+    margin-top: s(2);
+
+    & + {
+      @include element ('title') {
+        margin-top: s(6);
+      }
+    }
+  }
+
+  @include element ('column') {
+    @include modifier ('right') {
+      margin-top: s(12);
+      padding: 0;
+
+      @include media ('<desktop-small') {
+        margin-top: 0;
+      }
+    }
+  }
+}

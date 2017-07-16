@@ -1,0 +1,133 @@
+---
+title: Schedule
+---
+
+<div class="limit limit--top-margin">
+
+  {% include schedule/intro.html date='March 17th' %}
+
+  <div class="schedule" data-dates="3-17">
+    <table class="schedule__table">
+      <thead>
+        {% include schedule/header.html tracks='1' %}
+      </thead>
+      <tbody>
+        {% include schedule/event.html time='8.30-9.30' title='Check-in' fill='true' %}
+        {% include schedule/event.html time='9.30-9.45' title='Presentazione GrUSP' fill='true' %}
+
+        {% include schedule/talk.html time='9.45-10.30' title='Griglie CSS - il futuro prossimo del layout'  fill='true' %}
+
+        {% include schedule/pause.html time='10.30-10.50' title='Short break' icon="coffee" fill='true' %}
+
+        <tr>
+          {% include schedule/talk.html title='CSS Scalabile: Sfide e ricompense di un percorso in salita' time='10.50-11.20' fill='true' %}
+        </tr>
+
+        <tr>
+          {% include schedule/talk.html title='Refactoring CSS' time='11.25-11.55' fill='true' %}
+        </tr>
+
+        <tr>
+          {% include schedule/talk.html title='Le performance come esperienza religiosa' time='12.00-12.30' fill='true' %}
+        </tr>
+
+        <tr>
+          {% include schedule/talk.html title='Dalle Styleguide alle Pattern Libraries: cosa serve e quando' time='12.35-13.05' fill='true' %}
+        </tr>
+
+        {% include schedule/pause.html time='13.05-14.00' title='Lunch' icon="food" fill='true' %}
+
+        <tr>
+          {% include schedule/talk.html title='CSS, figli di un dio minore' time='14.00-14.30' fill='true'  %}
+        </tr>
+
+        <tr>
+          {% include schedule/talk.html title='The multicolumn challenge: ACCEPTED!' time='14.35-15.05' fill='true'  %}
+        </tr>
+
+        {% include schedule/pause.html time='15.05-15.35' title='Coffee break' icon="coffee" fill='true' %}
+
+        <tr>
+          {% include schedule/talk.html title='Responsive Images, uno standard HTML 5.1' time='15.35-16.05' fill='true'  %}
+        </tr>
+
+        <tr>
+          {% include schedule/talk.html title='Bootstrap 4 is coming!' time='16.10-16.40' fill='true'  %}
+        </tr>
+
+        {% include schedule/pause.html time='16.40-18.45' title='Happy hour' icon="bar" fill='true' %}
+
+      </tbody>
+    </table>
+  </div>
+
+  <div class="schedule schedule--mobile" data-dates="3-17">
+    <table class="schedule__table">
+      <thead>
+        {% include schedule/header.html track='1' %}
+      </thead>
+      <tbody>
+        {% include schedule/event.html time='8.30-9.30' title='Check-in' fill='true' %}
+        {% include schedule/event.html time='9.30-9.45' title='Presentazione GrUSP' fill='true' %}
+
+        {% include schedule/talk.html time='9.45-10.30' title='Griglie CSS - il futuro prossimo del layout'  fill='true' %}
+
+        {% include schedule/pause.html time='10.30-10.50' title='Short break' icon="coffee" fill='true' %}
+
+        <tr>
+          {% include schedule/talk.html title='CSS Scalabile: Sfide e ricompense di un percorso in salita' time='10.50-11.20' fill='true' %}
+        </tr>
+
+        <tr>
+          {% include schedule/talk.html title='Refactoring CSS' time='11.25-11.55' fill='true' %}
+        </tr>
+
+        <tr>
+          {% include schedule/talk.html title='Le performance come esperienza religiosa' time='12.00-12.30' fill='true' %}
+        </tr>
+
+        <tr>
+          {% include schedule/talk.html title='Dalle Styleguide alle Pattern Libraries: cosa serve e quando' time='12.35-13.05' fill='true' %}
+        </tr>
+
+        {% include schedule/pause.html time='13.05-14.00' title='Lunch' icon="food" fill='true' %}
+
+        <tr>
+          {% include schedule/talk.html title='CSS, figli di un dio minore' time='14.00-14.30' fill='true'  %}
+        </tr>
+
+        <tr>
+          {% include schedule/talk.html title='The multicolumn challenge: ACCEPTED!' time='14.35-15.05' fill='true'  %}
+        </tr>
+
+        {% include schedule/pause.html time='15.05-15.35' title='Coffee break' icon="coffee" fill='true' %}
+
+        <tr>
+          {% include schedule/talk.html title='Responsive Images, uno standard HTML 5.1' time='15.35-16.05' fill='true'  %}
+        </tr>
+
+        <tr>
+          {% include schedule/talk.html title='Bootstrap 4 is coming!' time='16.10-16.40' fill='true'  %}
+        </tr>
+
+        {% include schedule/pause.html time='16.40-18.45' title='Happy hour' icon="bar" fill='true' %}
+
+      </tbody>
+    </table>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+{% include index/newsletter.html %}
+{% include index/sponsors.html %}

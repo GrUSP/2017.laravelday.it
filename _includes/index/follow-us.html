@@ -1,0 +1,25 @@
+<div class="follow-us">
+  <div class="follow-us__title">
+    You can follow <span class="follow-us__conf">{{ site.data.conference.name }}</span> on
+  </div>
+  <div class="follow-us__socials">
+    {% if site.data.social.facebook %}
+      <a href="{{ site.data.social.facebook }}" class="social icon-facebook"></a>
+    {% endif %}
+    {% if site.data.social.flickr %}
+      <a href="{{ site.data.social.flickr }}" class="social icon-flickr"></a>
+    {% endif %}
+    {% if site.data.social.gplus %}
+      <a href="{{ site.data.social.gplus }}" class="social icon-gplus"></a>
+    {% endif %}
+    {% if site.data.social.twitter %}
+      <a href="{{ site.data.social.twitter }}" class="social icon-twitter"></a>
+    {% endif %}
+    {% if site.data.social.vimeo %}
+      <a href="{{ site.data.social.vimeo }}" class="social icon-vimeo"></a>
+    {% endif %}
+    {% if site.data.social.youtube %}
+      <a href="{{ site.data.social.youtube }}" class="social icon-youtube"></a>
+    {% endif %}
+  </div>
+</div>

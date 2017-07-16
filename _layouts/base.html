@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>{{ site.data.conference.name }} {{ site.data.conference.year }} __ {{ page.title }}</title>
+
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+  {% include layout/favicon.html %}
+
+  <meta property="og:url" content="{{ site.data.conference.url }}">
+  <meta property="og:title" content="{{ site.data.conference.name }} {{ site.data.conference.year }} - {{ site.data.conference.where_when }}">
+  <meta property="og:image" content="{{ site.data.conference.og_image }}">
+
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/frontsize.min.css">
+</head>
+
+<body>
+  {% include layout/header.html %}
+  {% include layout/menu.html %}
+
+  {{ content }}
+
+  {% include layout/footer.html %}
+
+  <script src="https://use.typekit.net/mux1ajd.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+  <script src="{{ site.baseurl }}/js/dustman.min.js"></script>
+  <script src="//www.grusp.org/helpers/2017/new.js"></script>
+
+</body>
+</html>

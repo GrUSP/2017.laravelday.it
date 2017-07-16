@@ -1,0 +1,6 @@
+// @import '../_config/import';
+$use-core-base: false;
+$use-core-print: false;
+@import '../../../node_modules/frontsize/core/import';
+@import 'config';
+@import 'vendor-override';

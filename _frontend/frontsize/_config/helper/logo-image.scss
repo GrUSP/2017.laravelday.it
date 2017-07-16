@@ -1,0 +1,3 @@
+@mixin logo-image($scale: 1) {
+  height: s($scale, 45px);
+}

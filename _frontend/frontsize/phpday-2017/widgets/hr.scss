@@ -1,0 +1,6 @@
+@include block ('hr') {
+  border: 0;
+  border-top: 2px solid $color-hr;
+  margin-bottom: s(4);
+  margin-top: s(4);
+}

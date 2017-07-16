@@ -1,0 +1,6 @@
+$path-fonts: '/fonts/grusp/' !default;
+
+@include font('grusp', (ttf)) {
+  font-family: 'grusp';
+  font-weight: 400;
+}
