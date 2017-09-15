@@ -31,7 +31,7 @@ platinum:
   max: 2
   list:
     -
-      url: https://www.ideato.it/?utm_source=symfonyday
+      url: https://www.ideato.it/?utm_source=laravelday
       image: ideato.svg
 gold:
   price: € 1,000
@@ -43,6 +43,9 @@ gold:
     - 3 biglietti gratuiti
   max: 8
   list:
+    -
+      url: https://www.coderblock.com/?utm_source=laravelday
+      image: coderblock.svg
 
 silver:
   price: € 500
