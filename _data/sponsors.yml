@@ -44,7 +44,7 @@ gold:
   max: 8
   list:
     -
-      url: https://www.coderblock.com/?utm_source=laravelday
+      url: https://coderblock.com/?utm_source=laravelday
       image: coderblock.svg
 
 silver:
