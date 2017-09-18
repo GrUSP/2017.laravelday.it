@@ -1,25 +1,27 @@
 ---
-title: CQRS per sviluppatori Symfony a workshop by ideato
+title: Laravel 5.5 Primer: dalle basi al deploy
 ---
 
 <div class="limit">
 
   <div class="intro intro--no-height">
-    <h1 class="intro__title">CQRS per sviluppatori Symfony</h1>
+    <h1 class="intro__title">Laravel 5.5 Primer: dalle basi al deploy</h1>
   </div>
 
-  <h1 class="row__title">19 Ottobre 2017, Milano</h1>
+  <h1 class="row__title">30 Novembre 2017, Verona</h1>
   <h3 class="row__title">un workshop realizzato in collaborazione con
-    <a href="http://www.ideato.it/?utm_source=symfonyday">ideato</a>
+    <a href="https://github.com/chrispecoraro/?utm_source=laravelday">Christopher Pecoraro</a>
   </h3>
 
   <div class="row row--2">
     <p class="row__column">
-      Il corso ha l’obiettivo di far conoscere le basi di CQRS/ES partendo da un approccio teorico fino ad arrivare all’implementazione di un caso d’uso.
+      Lo scopo di questo workshop è quello di avvicinare sviluppatori PHP a Laravel. Durante il corso verrà analizzato il framework dalle sue basi per arrivare a sviluppare una piccola applicazione API-driven.
     </p>
 
     <p class="row__column">
-      Alla fine del corso avrete solide basi sull’argomento e del codice funzionante da utilizzare come punto di partenza per i vostri progetti.
+      Laravel 5.5, ultima versione appena rilasciata, ha diverse funzionalità incluse di default per facilitare il processo di sviluppo e precedentemente esterne, come Fractal, per trasformare l'output e formattarlo correttamente per usarlo con framework JS come React o Vue.js.<br>
+      Utilizzeremo questi nuovi strumenti, in un processo guidato di apprendimento, insieme al package Mega Make (https://github.com/chrispecoraro/mega-make), per automatizzare la creazione della nostra applicazione RESTful.<br>
+      Infine esamineremo in dettaglio, ogni singolo aspetto del sistema di API interno di Laravel.
     </p>
 
     <p class="row__column">
@@ -36,36 +38,34 @@ title: CQRS per sviluppatori Symfony a workshop by ideato
   <div class="row row--1">
     <div class="row__column">
     <p class="row__text">
+      Introduzione all'ecosistema dei tool inclusi in Laravel:
       <ol>
-        <li>Cos’è CQRS e perché usarlo</li>
-        <li>Cos’è Event Sourcing e perché usarlo</li>
-        <li>CQRS ed ES insieme</li>
-        <li>Le componenti principali:
-          <ul>
-            <li>Command</li>
-            <li>Event</li>
-            <li>Aggregate</li>
-            <li>Read Model</li>
-            <li>Process e Saga per modellare l’interazione tra aggregati</li>
-          </ul>
-        </li>
+        <li>Composer</li>
+        <li>Artisan</li>
+        <li>Dusk</li>
+        <li>Passport</li>
+        <li></li>
+      </ol>
 
-        <li>Vantaggi e svantaggi</li>
-        <li>Hands on: implementazione di una funzionalità completa con broadway:
-          <ul>
-            <li>CQRS/ES con Symfony: broadway e broadway bundle</li>
-            <li>Compiere azioni: il write model: Command, CommandHandler,Aggregate,Event, Event Store</li>
-            <li>Estrarre i dati: il read model: Projector, Read Model</li>
-          </ul>
-        </li>
-        <li>Unit test</li>
-        <li>Interazione tra aggregati tramite Process e Saga</li>
-      </ul>
+      Introduzione ed utilizzo dei principali componenti Laravel:
+      <ol>
+        <li>Models</li>
+        <li>Migrations</li>
+        <li>Model Factories</li>
+        <li>Faker</li>
+        <li>Seeders</li>
+        <li>Resource Controllers</li>
+        <li>Validation Rules</li>
+        <li>Single API Resources</li>
+        <li>API Resource Collections</li>
+        <li>Blade-based Views</li>
+        <li>Tests</li>
+      </ol>
     </p>
 
     <p class="row__text">
       Il completamento del programma dipende dalla velocità con la quale riusciremo ad affrontare gli argomenti.<br>
-      Broadway è la libreria che abbiamo scelto per l’implementazione della nostra demo. Fornisce delle componenti utili per l’implementazione di CQRS/ES ma tutte le nozioni apprese nel corso del workshop sono implementabili con librerie analoghe o scrivendosi il proprio framework CQRS/ES.
+      Consigliamo ai partecipanti di preparare una macchina Vagrant con uno stack LAMP preconfigurato.
     </p>
   </div>
 
@@ -78,12 +78,11 @@ title: CQRS per sviluppatori Symfony a workshop by ideato
     <div class="row__column">
       <h3 class="column__title">A chi è rivolto</h3>
       <p class="row__text">
-        Il corso è rivolto a chi vuole accelerare la sua curva di apprendimento sull’argomento e capire in quali casi è utile utilizzare questo pattern.
+        Il corso è rivolto a chi vuole accelerare la sua curva di apprendimento sull’argomento e capire in quali casi è utile utilizzare questo framework.
         Conoscenze richieste:
         <ul>
           <li>PHP</li>
           <li>Programmazione ad oggetti</li>
-          <li>Symfony Base</li>
           <li>Unit test (opzionale)</li>
         </ul>
       </p>
@@ -91,7 +90,7 @@ title: CQRS per sviluppatori Symfony a workshop by ideato
     <div class="row__column">
       <h3 class="column__title">Informazioni utili</h3>
       <p class="row__text">
-        La durata del corso è di una giornata e <b>si terrà il 19 Ottobre</b> (il giorno prima del SymfonyDay).<br>
+        La durata del corso è di una giornata e <b>si terrà il 30 Novembre nella stessa location della conferenza</b> (il giorno prima del LaravelDay).<br>
         Qualche giorno prima del corso verrà fornito un repository git a tutti i partecipanti, con il codice applicativo e la macchina virtuale per far girare i test e l’applicazione.<br>
         È responsabilità del partecipante arrivare con la macchina virtuale funzionante o con il progetto funzionante sulla propria macchina locale. Vi daremo tutte le indicazioni utili per la configurazione.
       </p>
