@@ -6,6 +6,7 @@ where_when: Verona, 30 Novembre / 1 Dicembre 2017
 year: 2017
 since: 2017
 call_for_paper_url: https://goo.gl/forms/Shqwxii7Yq3JqywK2
-call_for_paper: false
+call_for_paper: true
 talks_available: false
 schedule_available: false
+has_workshop: true

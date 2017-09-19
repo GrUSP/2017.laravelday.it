@@ -16,10 +16,11 @@
 
         <div class="header__menu-desktop">
 
-          <!--a href="{{ site.baseurl }}/workshop.html" class="button">
+          {% if site.data.conference.has_workshop %}
+          <a href="{{ site.baseurl }}/workshop.html" class="button">
             Workshop
-          </a-->
-
+          </a>
+          {% endif %}
           {% if site.data.conference.talks_available %}
           <a href="{{ site.baseurl }}/talks.html" class="button">
             Talks
