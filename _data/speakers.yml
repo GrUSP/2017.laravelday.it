@@ -3,3 +3,24 @@
 call_for_paper_url: https://goo.gl/forms/Shqwxii7Yq3JqywK2
 call_for_paper: true
 list:
+  -
+    id: christopher-pecoraro
+    description:
+    image: christopher-pecoraro.jpg
+    first_name: Christopher
+    last_name: Pecoraro
+    twitter: chris__pecoraro
+  -
+    id: gianfranco-castro
+    description:
+    image: gianfranco-castro.png
+    first_name: Gianfranco
+    last_name: Castro
+    twitter: casgin
+  -
+    id: dario-tranchitella
+    description:
+    image: dario-tranchitella.jpg
+    first_name: Dario
+    last_name: Tranchitella
+    twitter: tranchitellad

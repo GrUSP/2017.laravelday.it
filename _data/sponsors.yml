@@ -33,6 +33,9 @@ platinum:
     -
       url: https://www.ideato.it/?utm_source=laravelday
       image: ideato.svg
+    -
+      url: http://www.lastminutegroup.com/?utm_source=laravelday
+      image: lastminute.svg
 gold:
   price: € 1,000
   offer:
@@ -65,3 +68,6 @@ bronze:
     - 1 biglietto gratuito
   max: 32
   list:
+    -
+      url: http://www.kiratech.it?utm_source=laravelday
+      image: kiratech.svg

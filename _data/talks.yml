@@ -1,0 +1,18 @@
+-
+  speaker_id:
+    - christopher-pecoraro
+  title: "RESTful API: la novità in Laravel 5.5"
+  extract: >
+    Laravel 5.5 ha aggiunto alcune cose per aiutarci a creare più velocemente la basi di un API restful. Per esempio, adesso i transformer sono stati integrati, quindi non c'è più bisogno di includere Fractal. Questa talk parlerà degli step necessari per creare un'API RESTful semplice partendo da zero, usando la varie novità.
+-
+  speaker_id:
+    - gianfranco-castro
+  title: Automatizzare i test sulla UI con Dusk
+  extract: >
+    Utilizzare Dusk per l'automazione dei test sulla UI, come progettare un test sulla UI, come interagire con gli elementi della pagina (selettori, form, link, caricamento dei file ), strutturare e configurare il progetto Laravel, integrazione con i sistemi di CI (TravisCI e CicleCI)
+-
+  speaker_id:
+    - dario-tranchitella
+  title: 12 Factors Laravel
+  extract: >
+    "It works on my machine: è la frase che tutti noi abbiamo usato o che ci siamo sentiti dire almeno una volta nella vita, in combinazione a "non possiamo scalare orizzontalmente". Con l'ausilio a Docker è possibile rendere un'applicazione Laravel altamente scalabile nel cloud: grazie agli adapter offerti per la gestione della base dati, della cache, delle sessioni e delle code è possibile adottare i principi dettati dal manifesto ""12 factors app"", seguendo dunque le best practices di DevOps per creare un ambiente ottimizzato a qualsiasi environment con pochi comandi.
