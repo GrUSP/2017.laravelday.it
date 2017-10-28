@@ -71,3 +71,6 @@ bronze:
     -
       url: http://www.kiratech.it?utm_source=laravelday
       image: kiratech.svg
+    -
+      url: http://laramind.com/corsi-in-aula?utm_source=laravelday
+      image: laramind.svg
