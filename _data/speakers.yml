@@ -50,3 +50,10 @@ list:
     first_name: Riccardo
     last_name: Scasseddu
     twitter: ennetech
+  -
+    id: simone-gentili
+    description:
+    image: simone-gentili.jpg
+    first_name: Simone
+    last_name: Gentili
+    twitter: ennetech

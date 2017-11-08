@@ -40,3 +40,9 @@
   title: "Playmoove: Shared mobility within everyone's reach (developers included)"
   extract: >
     "Understanding the tools we use every day it’s a critical component of building good software in a reasonable amount of time. But tools are not enough when software grows, in this talk I am condensing my experience with laravel to help you bootstrap and be really productive on your next project. In this talk we will introduce how we built Playmoove to be as simple as possible for the final customer and extremely extensible and revisionable for the developers. We will (almost) deep dive into the top things that have enhanced our developing experience: - From writing better controllers with eloquent automatic model binding and Abstract requests with the FormRequest, to Enhance application response time using queues to balance and delegate the load and eloquent eager loading, up to Improve maintainability and inspectability with  Abstract models on API  layers, ‎Log exception to track down problems and  exception rendering to give end user coherent error messages"
+-
+  speaker_id:
+    - simone-gentili
+  title: "Deploy di applicazioni Laravel con le pipeline di Bitbucket"
+  extract: >
+    "Da sempre fare il deploy di applicazioni multi-istanza rappresenta una sfida per lo sviluppatore e per il sistemista. Oggi grazie a strumenti gratuiti e un pò di esperienza in materia è possibile eseguire tale operazione lavorando su pipeline che prevedono testing automatico, validazione del code style e molto altro, in modo da ottenere una Continuous Integration consistente, efficace ed in tempi brevissimi. Scopriamo insieme come con un progetto Laravel e le pipeline di Bitbucket."
