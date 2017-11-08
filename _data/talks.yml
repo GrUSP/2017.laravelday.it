@@ -15,4 +15,28 @@
     - dario-tranchitella
   title: 12 Factors Laravel
   extract: >
-    "It works on my machine: è la frase che tutti noi abbiamo usato o che ci siamo sentiti dire almeno una volta nella vita, in combinazione a "non possiamo scalare orizzontalmente". Con l'ausilio a Docker è possibile rendere un'applicazione Laravel altamente scalabile nel cloud: grazie agli adapter offerti per la gestione della base dati, della cache, delle sessioni e delle code è possibile adottare i principi dettati dal manifesto ""12 factors app"", seguendo dunque le best practices di DevOps per creare un ambiente ottimizzato a qualsiasi environment con pochi comandi.
+    "It works on my machine: è la frase che tutti noi abbiamo usato o che ci siamo sentiti dire almeno una volta nella vita, in combinazione a "non possiamo scalare orizzontalmente". Con l'ausilio a Docker è possibile rendere un'applicazione Laravel altamente scalabile nel cloud: grazie agli adapter offerti per la gestione della base dati, della cache, delle sessioni e delle code è possibile adottare i principi dettati dal manifesto '12 factors app', seguendo dunque le best practices di DevOps per creare un ambiente ottimizzato a qualsiasi environment con pochi comandi."
+-
+  speaker_id:
+    - christian-nastasi
+  title: "Laravel Doctrine: a Data Mapper approach"
+  extract: >
+    "Eloquent è uno strumento potentissimo: permette di velocizzare, e di molto, lo sviluppo di applicazioni web offrendoti un’interfaccia molto chiara e intuitiva. Per la prototipazione rapida è il massimo. Tuttavia, non appena l’applicazione cresce di dimensione, la situazione rischia di esploderci in mano in quanto Eloquent soffre di tutti i limiti di un Active Record. Un’alternativa a questo pattern è il Data Mapper, implementato in maniera eccellente da Doctrine. In questo talk vedremo quindi come integrare Doctrine all'interno di Laravel e verrà dato qualche spunto su come strutturare un’architettura molto più solida."
+-
+  speaker_id:
+    - tsuneo-kurihara
+  title: "Codemotion, Laravel & me: 3 anni in un'azienda in rapida crescita"
+  extract: >
+    "Tre anni fa è iniziato lo sviluppo di tool per la gestione delle conferenze di Codemotion, dall’esigenza naturale di automatizzare alcuni processi che fino a quel momento erano gestiti manualmente. Data la presenza di uno stack LAMP per i siti web degli eventi, la scelta tecnologica è caduta su Laravel, tra i framework php più in voga al momento. Questi strumenti di supporto sono diventati nel frattempo dei veri e propri progetti, chiamati a rispondere alle continue e nuove necessità dell’azienda che continua a crescere e ad espandersi, diventando un importante punto di riferimento per i developers in Europa. Il talk vuole ripercorrere questa evoluzione, dal punto di vista dello sviluppatore che ha iniziato a sviluppare su un framework da zero, mostrando alcune delle sfide che si sono presentate e come sono state affrontate con Laravel."
+-
+  speaker_id:
+    - damiano-petrungaro
+  title: "Using Repository Pattern with Eloquent for Code That Lasts"
+  extract: >
+    "Laravel è un framework moderno e davvero potente sotto moltissimi punti di vista, componenti semplici da utilizzare ed estendere sono la chiave del suo successo. Tra questi brilla l'ORM Eloquent che riesce a darci un'ottima astrazione per manipolare velocemente i modelli e la loro persistenza. Quando però entrano in gioco logiche di dominio particolarmente complesse o si necessità di più controllo e di una forte elasticità per mappare i dati a nostro piacimento, Eloquent comincia a remarci contro e non essere più un fedele alleato. Scopriamo come continuare ad utilizzare Eloquent rendendo il nostro codice più pulito e disaccoppiato dalla sua dipendenza, senza però perderne i numerosi vantaggi e l'incredibile immediatezza d'utilizzo."
+-
+  speaker_id:
+    - riccardo-scasseddu
+  title: "Playmoove: Shared mobility within everyone's reach (developers included)"
+  extract: >
+    "Understanding the tools we use every day it’s a critical component of building good software in a reasonable amount of time. But tools are not enough when software grows, in this talk I am condensing my experience with laravel to help you bootstrap and be really productive on your next project. In this talk we will introduce how we built Playmoove to be as simple as possible for the final customer and extremely extensible and revisionable for the developers. We will (almost) deep dive into the top things that have enhanced our developing experience: - From writing better controllers with eloquent automatic model binding and Abstract requests with the FormRequest, to Enhance application response time using queues to balance and delegate the load and eloquent eager loading, up to Improve maintainability and inspectability with  Abstract models on API  layers, ‎Log exception to track down problems and  exception rendering to give end user coherent error messages"

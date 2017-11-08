@@ -1,7 +1,7 @@
 # place images in:
 # img/conf-name/speaker/file.jpg
 call_for_paper_url: https://goo.gl/forms/Shqwxii7Yq3JqywK2
-call_for_paper: true
+call_for_paper: false
 list:
   -
     id: christopher-pecoraro
@@ -24,3 +24,31 @@ list:
     first_name: Dario
     last_name: Tranchitella
     twitter: tranchitellad
+  -
+    id: christian-nastasi
+    description:
+    image: christian-nastasi.jpg
+    first_name: Christian
+    last_name: Nastasi
+    twitter: c_nastasi
+  -
+    id: tsuneo-kurihara
+    description:
+    image: tsuneo-kurihara.jpg
+    first_name: Tsuneo
+    last_name: Kurihara
+    twitter: tsu84
+  -
+    id: damiano-petrungaro
+    description:
+    image: damiano-petrungaro.jpg
+    first_name: Damiano
+    last_name: Petrungaro
+    twitter: damiano_dev
+  -
+    id: riccardo-scasseddu
+    description:
+    image: riccardo-scasseddu.jpg
+    first_name: Riccardo
+    last_name: Scasseddu
+    twitter: ennetech
