@@ -57,3 +57,11 @@ list:
     first_name: Simone
     last_name: Gentili
     twitter: sensorario
+
+-
+    id: danilo-costa
+    description:
+    image: danilo-costa.jpg
+    first_name: Danilo
+    last_name: Costa
+    twitter: coderblock
