@@ -6,12 +6,6 @@
     Laravel 5.5 ha aggiunto alcune cose per aiutarci a creare più velocemente la basi di un API restful. Per esempio, adesso i transformer sono stati integrati, quindi non c'è più bisogno di includere Fractal. Questa talk parlerà degli step necessari per creare un'API RESTful semplice partendo da zero, usando la varie novità.
 -
   speaker_id:
-    - gianfranco-castro
-  title: "Automatizzare i test sulla UI con Dusk"
-  extract: >
-    Utilizzare Dusk per l'automazione dei test sulla UI, come progettare un test sulla UI, come interagire con gli elementi della pagina (selettori, form, link, caricamento dei file ), strutturare e configurare il progetto Laravel, integrazione con i sistemi di CI (TravisCI e CicleCI)
--
-  speaker_id:
     - dario-tranchitella
   title: "12 Factors Laravel"
   extract: >

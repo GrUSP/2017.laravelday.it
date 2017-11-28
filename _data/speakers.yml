@@ -9,13 +9,6 @@ list:
     last_name: Pecoraro
     twitter: chris__pecoraro
   -
-    id: gianfranco-castro
-    description:
-    image: gianfranco-castro.png
-    first_name: Gianfranco
-    last_name: Castro
-    twitter: casgin
-  -
     id: dario-tranchitella
     description:
     image: dario-tranchitella.jpg
