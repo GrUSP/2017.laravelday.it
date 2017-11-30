@@ -74,3 +74,6 @@ bronze:
     -
       url: http://laramind.com/corsi-in-aula?utm_source=laravelday
       image: laramind.svg
+    -
+      url: http://www.studiomado.it/?utm_source=laravelday
+      image: mado.svg
