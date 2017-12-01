@@ -69,6 +69,9 @@ bronze:
   max: 32
   list:
     -
+      url: http://dbs.agency/?utm_source=laravelday
+      image: designbrothers.png
+    -
       url: http://www.kiratech.it?utm_source=laravelday
       image: kiratech.svg
     -
